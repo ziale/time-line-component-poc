@@ -1,0 +1,17 @@
+header {
+  background: #34495e;
+  color:white;
+  height:5.4rem;
+  display: flex;
+  align-items: center;
+  padding: .8rem 1.6rem;
+}
+.wrap {
+  min-height: calc(100% - 5.4rem);
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+}
+.timeline {
+  /* background: #ececf0; */
+}

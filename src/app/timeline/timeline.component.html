@@ -1,0 +1,18 @@
+<div class="timeline-wrap">
+	<div class="item item--first"
+  [ngClass]="{'item--selected': selectedItems.length === 0}">
+    <button  class="item__circle timeline-btn"
+     (click)="clearSelection()"></button>
+		<span class="item__text">Show all</span>
+  </div>
+	<div class="item" 
+    [ngClass]="{'item--selected': isSelected(item)}"
+    *ngFor="let item of items" (click)="selectItem(item)">
+    <ng-container>
+		<button  class="item__circle timeline-btn"
+
+    ></button>
+		<span class="item__text">{{item}}</span>
+    </ng-container>
+	</div>
+</div>
